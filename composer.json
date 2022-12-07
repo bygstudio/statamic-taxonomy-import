@@ -1,0 +1,28 @@
+{
+    "name": "bygstudio/statamic-taxonomy-import",
+    "autoload": {
+        "psr-4": {
+            "Bygstudio\\StatamicTaxonomyImport\\": "src"
+        }
+    },
+    "require": {
+        "statamic/cms": "^3.0",
+        "spatie/simple-excel": "^1.9"
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Taxonomy Import",
+            "description": "Statamic Taxonomy Import addon"
+        },
+        "laravel": {
+            "providers": [
+                "Bygstudio\\StatamicTaxonomyImport\\TaxonomyImportServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}
